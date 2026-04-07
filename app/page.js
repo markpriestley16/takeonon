@@ -1,65 +1,19 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main style={{fontFamily:'sans-serif',background:'#faf8f3',minHeight:'100vh',margin:0,padding:0}}>
+      <nav style={{background:'#111a14',padding:'0 48px',height:'64px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+        <div style={{display:'flex',alignItems:'center',gap:'10px',color:'white',fontSize:'22px',fontWeight:'800'}}>
+          <div style={{background:'#0f7b52',width:'34px',height:'34px',borderRadius:'8px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'13px',fontWeight:'800'}}>TO</div>
+          TakenOn
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+        <button style={{background:'#0f7b52',color:'white',border:'none',padding:'10px 22px',borderRadius:'8px',fontSize:'14px',fontWeight:'700'}}>Start free trial</button>
+      </nav>
+      <div style={{maxWidth:'1100px',margin:'0 auto',padding:'100px 48px',textAlign:'center'}}>
+        <h1 style={{fontSize:'64px',fontWeight:'900',letterSpacing:'-2.5px',color:'#111a14',marginBottom:'24px'}}>Taking someone <span style={{color:'#0f7b52'}}>on.</span><br/>Made simple.</h1>
+        <p style={{fontSize:'19px',color:'#3a4a3e',marginBottom:'40px'}}>From job ad to first day in under 10 minutes.</p>
+        <button style={{background:'#0f7b52',color:'white',border:'none',padding:'16px 32px',borderRadius:'10px',fontSize:'16px',fontWeight:'700'}}>Start free — 14 days →</button>
+      </div>
+      <footer style={{background:'#111a14',padding:'32px 48px',textAlign:'center',color:'rgba(255,255,255,0.3)',fontSize:'13px'}}>© 2026 TakenOn · Queenstown, New Zealand</footer>
+    </main>
+  )
 }
